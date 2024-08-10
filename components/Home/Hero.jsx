@@ -3,8 +3,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="px-[32px] lg:px-[40px] py-4 md:py-16 xl:py-6 flex gap-5 justify-between items-center">
-      <div className="py-8 md:py-0 md:px-14 lg:py-16 max-w-[720px]">
+    <section id="home" className="px-[32px] lg:px-[40px] py-4 md:py-16 xl:py-6 flex gap-5 justify-between items-center font-poppins">
+      <div className="py-8 md:py-0 md:px-14 lg:py-16 max-w-[750px]">
         <h1 className="font-bold text-[#1E1E1E] leading-[38px] md:leading-[49px] max-w-[451px] text-[32px] md:text-[40px]">
           Accounting, Tax and Certifications
         </h1>

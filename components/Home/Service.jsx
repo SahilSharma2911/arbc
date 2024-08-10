@@ -60,7 +60,7 @@ const serviceData = [
 
 const Service = () => {
   return (
-    <section className="px-[32px] lg:px-[8rem] py-[4.2rem] lg:py-[5.5rem]">
+    <section id="services" className="px-[32px] lg:px-[8rem] py-[4.2rem] lg:py-[5.5rem] font-poppins">
       <h2 className="text-[32px] md:text-[48px] text-center font-semibold">
         Our Services
       </h2>

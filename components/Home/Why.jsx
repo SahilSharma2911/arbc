@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Why = () => {
   return (
-    <section className="bg-[#1E1E1E] text-white px-[32px] lg:px-[8rem] py-[4.2rem] lg:py-[5.5rem]">
+    <section id="why-us" className="bg-[#1E1E1E] text-white px-[32px] lg:px-[8rem] py-[4.2rem] lg:py-[5.5rem] font-poppins">
       <h2 className="text-[32px] md:text-[48px] font-semibold text-center">
         Why Us?
       </h2>

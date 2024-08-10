@@ -3,7 +3,7 @@ import React from "react";
 
 const Who = () => {
   return (
-    <section className="bg-[#1E1E1E] text-white px-[32px] lg:px-[8rem] py-[4.2rem] lg:py-[5.5rem]">
+    <section id="who-are-we" className="bg-[#1E1E1E] text-white px-[32px] lg:px-[8rem] py-[4.2rem] lg:py-[5.5rem] font-poppins">
       <h2 className="text-[32px] md:text-[48px] font-semibold text-center">Who We Are</h2>
       <div className="flex gap-10 lg:gap-6 flex-col lg:flex-row justify-between items-center mt-8 lg:mt-12 w-full">
         <div className="text-[20px] leading-[30px] lg:w-[65%]">

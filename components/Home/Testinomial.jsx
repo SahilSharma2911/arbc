@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialList from "./TestimonialList";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -14,8 +15,13 @@ const testimonials = [
   },
   {
     id: 2,
-    text: "text2",
-    name: "abc",
+    text: "Best professional services in town. A person can feel relaxed after engaging the firm for all his professional matters.",
+    name: "Manik Gupta",
+  },
+  {
+    id: 2,
+    text: "Best place for All Financial & Tax related Services in Powayan region.... Best quality services provided by CA Aryan Rai Bhardwaj sir.",
+    name: "Himkar Pandey",
   },
 ];
 
@@ -53,16 +59,24 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="px-[32px] lg:px-[8rem] py-[3.8rem] lg:py-[5.5rem] flex flex-col">
+    <section
+      id="testimonials"
+      className="px-[32px] lg:px-[8rem] py-[3.8rem] lg:py-[5.5rem] flex flex-col font-poppins"
+    >
       <h2 className="text-[32px] md:text-[48px] text-center font-semibold text-[#023E62]">
         Client Testimonials
       </h2>
-      <div className="flex items-center gap-2 mt-8 md:mt-12">
-        <button
-          onClick={prevSlide}
-          className="mt-14"
-          disabled={currentSlide === 0}
-        >
+      <div className="mx-auto mt-8">
+        <Image
+          src={"/Images/arrow.png"}
+          width={100}
+          height={100}
+          className="md:w-[100px] md:h-[100px] w-[70px] h-[70px]"
+          alt="##"
+        />
+      </div>
+      <div className="flex items-center mt-4">
+        <button onClick={prevSlide} className="" disabled={currentSlide === 0}>
           <MdArrowBackIos
             className={`w-[2.5rem] md:w-[6rem] h-[2.5rem] md:h-[8rem] ${
               currentSlide === 0 ? "text-gray-400" : "text-[#2B7B67]"
@@ -78,11 +92,11 @@ const Testimonial = () => {
         </div>
         <button
           onClick={nextSlide}
-          className="mt-14"
+          className=""
           disabled={currentSlide === totalSlides}
         >
           <MdArrowForwardIos
-            className={`w-[2.5rem] md:w-[6rem] h-[2.5rem] md:h-[8rem] ${
+            className={`w-[2.5rem] md:w-[6rem] h-[2.5rem] md:h-[8rem]  ${
               currentSlide === totalSlides ? "text-gray-400" : "text-[#2B7B67]"
             }`}
           />
