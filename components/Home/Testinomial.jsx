@@ -10,7 +10,7 @@ import Image from "next/image";
 const testimonials = [
   {
     id: 1,
-    text: "They were really professional in their work. The process for my personal ITR filing was really smooth. I would highly recommend ARBC to you if you are looking for some good quality accounting work.",
+    text: "They were highly professional in their work. The ITR filing process was smooth. Highly recommend ARBC for quality accounting.",
     name: "Atul Bhatt",
   },
   {

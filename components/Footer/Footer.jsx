@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div
+      <section
         id="contact-us"
         className="bg-[#1E1E1E] text-white px-[18px] lg:px-[8rem] py-[3.5rem] font-poppins"
       >
@@ -16,19 +16,19 @@ const Footer = () => {
           Contact US
         </h2>
         <div className="mt-6 md:mt-12 flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
-          <div className="lg:w-1/2  bg-gray-500 rounded-md flex items-center justify-center">
-            <Link
-              href="https://www.google.com/maps/place/A+RAI+BHARDWAJ+%26+CO.-CHARTERED+ACCOUNTANTS/@28.5990993,79.1411197,9z/data=!4m6!3m5!1s0x399f9d4e2d39ccdf:0xeaab8167199f03c3!8m2!3d28.0691047!4d80.0962149!16s%2Fg%2F11s02dny3x?coh=219814&entry=tts&g_ep=EgoyMDI0MDgwNy4wKgBIAVAD"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={"/Images/map.png"}
-                width={500}
-                height={500}
-                className="w-full h-full rounded-xl"
-              />
-            </Link>
+          <div className="lg:w-1/2 rounded-md flex items-center justify-center">
+            <div className="w-full h-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163370.23387350188!2d79.1411197!3d28.5990993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399f9d4e2d39ccdf%3A0xeaab8167199f03c3!2sA%20RAI%20BHARDWAJ%20%26%20CO.%20CHARTERED%20ACCOUNTANTS!5e0!3m2!1sen!2sin!4v1699919341532!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-xl max-w-[1000px] h-[300px] md:h-[400px]"
+              ></iframe>
+            </div>
           </div>
 
           <div className="flex gap-5 flex-col">
@@ -169,7 +169,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="bg-[#282A2A] text-[#FFFFFF] py-3 md:py-6 px-[32px] lg:px-[8rem] text-[14px] md:text-[20px] leading-[28px] md:leading-[30px] flex text-center items-center justify-center">
         A RAI BHARDWAJ & CO. All rights reserved © 2024
       </div>

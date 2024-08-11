@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MdDoubleArrow } from "react-icons/md";
 
@@ -11,9 +12,15 @@ const ServiceCard = ({ imageSrc, title, services }) => {
           <h3 className="text-[20px] leading-[30px] font-semibold text-center">
             {title}
           </h3>
-          <button className="px-4 py-2 text-white bg-[#2B7B67] rounded-3xl w-[9rem]">
-            Enquire Now
-          </button>
+          <Link
+            href="https://wa.me/918381892139"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-4 py-2 text-white bg-[#2B7B67] rounded-3xl w-[9rem]">
+              Enquire Now
+            </button>
+          </Link>
         </div>
         <div className="hidden md:flex">
           <ul className="text-[20px] leading-[30px] font-semibold list-disc">

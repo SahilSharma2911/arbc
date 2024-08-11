@@ -1,9 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
   return (
-    <section id="home" className="px-[32px] lg:px-[40px] py-4 md:py-16 xl:py-6 flex gap-5 justify-between items-center font-poppins">
+    <section
+      id="home"
+      className="px-[32px] lg:px-[40px] py-4 md:py-16 xl:py-6 flex gap-5 justify-between items-center font-poppins"
+    >
       <div className="py-8 md:py-0 md:px-14 lg:py-16 max-w-[750px]">
         <h1 className="font-bold text-[#1E1E1E] leading-[38px] md:leading-[49px] max-w-[451px] text-[32px] md:text-[40px]">
           Accounting, Tax and Certifications
@@ -17,9 +21,15 @@ const Hero = () => {
           become your trusted business advisor. Our certified accountants are
           passionate about your success
         </p>
-        <button className="px-4 py-2 text-white bg-[#2B7B67] rounded-3xl mt-7">
-          Enquire Now
-        </button>
+        <Link
+          href="https://wa.me/918381892139"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="px-4 py-2 text-white bg-[#2B7B67] rounded-3xl mt-7">
+            Enquire Now
+          </button>
+        </Link>
       </div>
       <div className="md:px-14 py-16">
         <Image
